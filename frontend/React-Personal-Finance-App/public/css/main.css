@@ -1,0 +1,164 @@
+
+#app{
+  font-family: 'Lato', sans-serif;
+}
+.counter-container{
+  border-top: 5px black solid;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+}
+
+.start-sub-category-form{
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+  border-bottom: 3px solid black;
+}
+
+td{
+  display: flex;
+  flex-direction: row;
+  max-height: 500px;
+}
+
+.instances-container{
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 500px;
+  max-width: 500px;
+  flex-grow: 1;
+}
+.main-instance{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*Start Components */
+.start-input-forms-container{
+  max-width: 60vw;
+  border: 1px black solid;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.start-instance-buttons{
+  margin: 10px 0 10px 0;
+}
+
+.start-instance-buttons button{
+  padding: 5px;
+  border-radius: 10px;
+  transition: box-shadow .5s;
+}
+
+.start-instance-buttons button:hover{
+  cursor: pointer;
+}
+
+.remove-button{
+  background-color: red;
+  border-radius: 10px;
+}
+
+.remove-button:hover{
+  box-shadow: 1px 1px 20px red;
+}
+
+.confirm-button{
+  background-color: royalblue;
+  border-radius: 10px;
+}
+
+.confirm-button:hover{
+  box-shadow: 1px 1px 20px royalblue;
+}
+
+.edit-button{
+  background-color: yellow;
+  border-radius: 10px;
+}
+.edit-button:hover{
+  box-shadow: 1px 1px 20px yellow;
+}
+
+.package-button, .retirement-button{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rebeccapurple;
+}
+
+.start-submit-container{
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 60vw;
+}
+
+.retirement-container{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,.5)
+}
+
+.add-img{
+
+  height: 30px;
+  width: 30px;
+  border: black 1px solid;
+  margin: auto;
+
+  border-radius: 100%;
+  transition: box-shadow .5s;
+}
+.add-img:hover{
+  box-shadow: 1px 1px 20px black;
+  cursor: pointer;
+}
+
+/*Main Area */
+.category-container{
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Info boxes and buttons */
+
+.start-info-button{
+  margin-bottom: 5px;
+  min-width: 5vw;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow .5s;
+
+}
+.start-info-button:hover{
+  box-shadow: 1px 1px 10px royalblue;
+}
+.start-info{
+  max-width: 60vw;
+  border: 3px solid black;
+  margin: auto;
+}
+
+/* Animations */
+.display-appear{
+  opacity: 0;
+}
+
+.display-appear.display-appear-active{
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.display-leave{
+  transform: translateY(0)
+}
+.display-leave.display-leave-active{
+  transform: translateY(100%);
+  transition: transform .5s;
+}
